@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.food-section {
+    box-sizing: border-box;
+    width: 30%; /* Desktop layout */
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff6600; /* Unique color for section title region */
+    color: white;
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+}
+
+/* Media Queries for Responsive Layout */
+
+/* Tablet layout */
+@media screen and (max-width: 991px) {
+    .food-section {
+        width: 48%;
+    }
+    .food-section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 767px) {
+    .food-section {
+        width: 100%;
+    }
+}
